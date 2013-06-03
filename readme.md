@@ -1,11 +1,11 @@
-#### Pempekku Template
+### Pempekku Template
 
 The template created by using guard, include;`zeengrid`, compass, and coffeescript
-template will be used in zeenspot ems 
+template will be used in [zeenspot](http://zeenspot.com) ems 
 
 theese are file structure : 
 
-            
+                        
             ├── coffee
             │   └── main.coffee
             ├── config.rb
