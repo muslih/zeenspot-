@@ -3,9 +3,14 @@
 Review
 ------
 
-The template created by using guard, include;`zeengrid`, compass, and coffeescript.
+A clean html5 ecommerce theme, build by using  :
+* guard
+* zeengrid
+* normalize
+* compass
+* coffeescript.
 
-the template will be used in [zeenspot](http://zeenspot.com) ems
+next, the template will be used in [zeenspot](http://zeenspot.com) ems as default theme
 
 Structure
 ---------
