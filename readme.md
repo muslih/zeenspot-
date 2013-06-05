@@ -74,6 +74,6 @@ Todos
 * Styling detail page
 * Styling contact page
 * Adding awesome font
-*adding mixins
+* Adding mixins
 
 
