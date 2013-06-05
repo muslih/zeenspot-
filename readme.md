@@ -1,8 +1,14 @@
-### Pempekku Template
+# Pempekku Template
+
+Review
+------
 
 The template created by using guard, include;`zeengrid`, compass, and coffeescript.
 
-the template will be used in [zeenspot](http://zeenspot.com) ems 
+the template will be used in [zeenspot](http://zeenspot.com) ems
+
+Structure
+---------
 
 theese are file structure : 
 
@@ -57,5 +63,12 @@ theese are file structure :
 
 9 directories, 37 files
 ```
+
+Todos
+-----
+* Styling detail page
+* Styling contact page
+* Adding awesome font
+*adding mixins
 
 
