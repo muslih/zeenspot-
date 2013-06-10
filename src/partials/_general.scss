@@ -2,7 +2,329 @@
 /*     2. general
 /*******************************************************************************/
 
+<<<<<<< HEAD
+=======
+@import "compass/css3";
+@import "icon/*.png";
+
+$mainColor:#a80000;
+$secColor:lighten($mainColor,65%);;
+$mainZise:12px;
+$mainFontColor:#444;
+$secondaryFontColor: #7e9a47;
+
+>>>>>>> 7140d51c4a595d59531b1dd37a288a10a3912fc0
 body{
 	background:$secColor; 
 	font-family: arial, sans-serif;
 }
+<<<<<<< HEAD
+=======
+
+/*******************************************************************************/
+/*     3. header
+/*******************************************************************************/
+
+#header{
+	background: $mainColor;
+	color: white;
+	padding: 50px 0px 100px 0px;
+}
+
+.logo{
+	display: block;
+	margin: 0;
+	float: left;
+}
+
+#form{
+	position: relative;
+	color:#444;
+}
+
+.cari{
+	@extend .logo;
+	float: right;
+
+	input[type="search"]{
+		position: absolute;
+		top:15px;
+		right: 0;
+		border:solid 1px lighten($mainFontColor,60%);
+		padding: 10px 40px 10px 10px;
+		font-size: $mainZise;
+		&:focus{
+			border:solid 1px lighten($mainColor,65%);
+			outline: none;
+		}
+	}
+
+	input[type="submit"]{
+		top:15px;
+		border: none;
+		position: absolute;
+		right:0;
+		z-index: 3;
+
+		margin:5px 5px 5px 0;
+
+		width: 30px;
+		height: 25px;
+
+		@include icon-sprite("icon-search");
+		@include hide-text;
+		background:{
+			color: transparent;
+			repeat:no-repeat;
+		}
+
+		&:hover {
+
+			background: {
+				color: lighten($mainFontColor,70%);
+			}
+		}
+	}
+}
+
+#nav{
+	position: relative;
+	@include box-shadow(0 1px 0 lighten($mainFontColor,60%));
+	margin-bottom: 10px;
+}
+
+nav{
+	overflow: hidden;
+	@include border-radius(5px 5px 0px 0px);
+
+	ul{
+		margin: 0;
+		padding:0;
+	}
+
+	li{
+		padding: 0;
+		float: left;
+		list-style: none;
+		border-left: 1px solid #fff;
+		border-right: 1px  solid lighten($mainFontColor,60%);
+		
+
+		&:hover{
+			background: lighten($mainFontColor,70%);
+		}
+	}
+
+	
+	a{
+		padding:15px;
+		// margin: 15px 0;
+		display: block;
+		font-size: $mainZise;
+		text-decoration: none;
+		color: $mainFontColor;
+		&.active{
+			background: lighten($mainFontColor,70%);
+		}
+	}
+}
+
+
+ul{
+		padding:0;
+		margin: 0;
+	&.cart{
+		position: absolute;
+		top:0;
+		right: 0;
+		float: right;
+		
+		li{
+			list-style: none;
+			padding: 13px 15px 13px 0;
+			a{
+				float: left;
+				line-height: 20px;
+				@include icon-sprite('icon-cart');
+				font-size: 13px;
+				display: block;
+				padding:0px 5px 0px 25px;
+				text-decoration: none;
+				color: lighten($mainFontColor,15%); 
+				&:after{
+					content: "  - "
+				}
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+
+			span{
+				float: left;
+				line-height: 20px;
+				background: none;
+				font-size: 13px;
+				display: block;
+				color: lighten($mainFontColor,15%);
+				&:before{
+					content: " Rp. ";
+				}
+			}
+		}
+	}
+}
+
+
+
+.slide{
+	img{
+		width: 100%;
+	}
+}
+
+/*******************************************************************************/
+/*     4.  section
+/*******************************************************************************/
+
+#section{
+	position: relative;
+	margin-top: -46px;
+	padding-bottom: 30px;
+
+	.baris{
+		background: #fff;
+		@include border-radius(5px);
+		@include box-shadow(0 0 5px #444);
+	}
+	.bungkus{
+		
+	}
+}
+
+#meta{
+	text-align: center;
+	font-size: 20px;
+	padding: 30px 0;
+	// font-style: italic;
+
+}
+
+#produk{
+	@include pie-clearfix;
+	.judul{
+		margin-bottom: 10px;
+		// @include pie-clearfix;
+		background:image-url('hr.png') repeat-x scroll left center transparent;
+		h2{
+			display: inline-block;
+			background: #fff;
+			font-size: 17px;
+			padding-right: 10px;
+			color: $mainColor;
+		}
+
+		
+	}
+	article{
+		margin-bottom: 30px;
+		&:nth-of-type(4n+1){
+			&.zeen-3{
+				clear: left;
+				margin-left: 0px;
+			}	
+		}
+	}
+
+	a{
+		color: $mainFontColor;
+		text-decoration: none;
+		.thumb{
+			@include transition-property(box-shadow);
+			@include transition-duration(1s);
+			@include box-shadow(0 0 0 5px lighten($mainFontColor,70%));
+		}
+
+		&:hover{
+			&>.thumb{
+				@include box-shadow(0 0 0 5px $mainColor);
+				@include transition-property(box-shadow);
+			}
+		}
+	}
+
+	h3{
+		font-size: 13px;
+		line-height: 20px;
+
+		span{
+			display: block;
+			font-size: 12px;
+			color: $secondaryFontColor;
+			&:before{
+				content: "Rp. ";
+			}
+			&:after{
+				content: ",-";
+			}
+		}
+	}
+
+}
+
+/*******************************************************************************/
+/*     5.  aside
+/*******************************************************************************/
+
+.sponsor{
+	text-align: center;
+	padding:15px 0;
+	a{
+		display: inline-block;
+		img{
+			width: auto;
+		}
+	}
+}
+
+aside{
+	background: $mainColor;
+	@include pie-clearfix;
+	padding:15px 0;
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	h3{
+		font-weight: bold;
+		margin: 0;
+	}
+	p{
+		margin: 0;
+	}
+}
+
+/*******************************************************************************/
+/*     6.  footer
+/*******************************************************************************/
+
+footer{	
+	@include border-radius(0 0 5px 5px);
+	@extend aside;
+	background: darken($mainColor,5%);
+	p{
+		// font-size: 12px;
+
+		float: left;
+		&.credit{
+			float: right;
+			text-align: right;
+		}
+
+		a{
+			text-decoration: none;
+			color: #fff;
+			font-weight: bold;
+		}
+	}
+}
+
+>>>>>>> 7140d51c4a595d59531b1dd37a288a10a3912fc0
