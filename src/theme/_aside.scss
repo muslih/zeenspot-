@@ -1,0 +1,30 @@
+/*******************************************************************************/
+/*     5.  aside
+/*******************************************************************************/
+
+.sponsor{
+	text-align: center;
+	padding:15px 0;
+	a{
+		display: inline-block;
+		img{
+			width: auto;
+		}
+	}
+}
+
+aside{
+	background: $mainColor;
+	@include pie-clearfix;
+	padding:15px 0;
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	h3{
+		font-weight: bold;
+		margin: 0;
+	}
+	p{
+		margin: 0;
+	}
+}
