@@ -6,10 +6,9 @@ css_dir = "css"
 sass_dir = "src"
 images_dir = "img"
 javascripts_dir = "js"
-<<<<<<< HEAD
+
 fonts_dir = "font"
-=======
->>>>>>> 7140d51c4a595d59531b1dd37a288a10a3912fc0
+
 
 # You can select your preferred output style here (can be overridden via the command line):
  # output_style = :compact # :expanded or :nested or :compact or :compressed
@@ -21,10 +20,6 @@ relative_assets = true
 line_comments = false
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 7140d51c4a595d59531b1dd37a288a10a3912fc0
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:
 # preferred_syntax = :sass

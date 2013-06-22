@@ -22,9 +22,37 @@ aside{
 	line-height: 20px;
 	h3{
 		font-weight: bold;
-		margin: 0;
+		margin: 0 0 10px 0;
+
 	}
 	p{
 		margin: 0;
 	}
+
+	.kontak{
+		li{
+			list-style: none;
+			i{
+				margin-right: 10px;
+			}
+			a{
+				color: #fff;
+				text-decoration: none;
+			}
+		}		
+	}
+
+	.pengunjung{
+		li{
+			list-style:none;
+			span{
+				font-weight: bold;
+				&:before{
+					content: " : ";
+					text-align: right;
+				}
+			}
+		}
+	}
+
 }
