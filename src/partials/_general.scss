@@ -190,7 +190,7 @@ ul{
 	.baris{
 		background: #fff;
 		@include border-radius(5px);
-		@include box-shadow(0 0 5px #444);
+		@include box-shadow(0 0 10px #444);
 	}
 	.bungkus{
 		

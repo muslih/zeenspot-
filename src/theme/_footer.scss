@@ -6,6 +6,10 @@ footer{
 	@include border-radius(0 0 5px 5px);
 	@extend aside;
 	background: darken($mainColor,5%);
+
+	h3{
+		margin: 0;
+	}
 	p{
 		// font-size: 12px;
 
