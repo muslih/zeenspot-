@@ -1,4 +1,4 @@
-# Pempekku Template
+# Default Zeenspot Template
 
 Review
 ------
